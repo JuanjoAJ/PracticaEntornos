@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 /* Crea un programa que pida 10 palabras por consola y las guarde en un array de String.
@@ -22,10 +23,11 @@ public class ProgramaStringEntornos {
         int opcion= scanner.nextInt();
         switch (opcion){
             case 1:
-                palabras(array);
+                todasPalabras(array);
                 break;
-                break;
+
             case 2:
+                System.out.println(palabraAzar(array));
 
                 break;
             case 3:
@@ -53,10 +55,16 @@ public class ProgramaStringEntornos {
 
 
     }
-    public static void palabras(String[]array){
+    public static void todasPalabras(String[]array){
         for (String item :
                 array) {
             System.out.print("\t"+item);
         }
+    }
+
+    public static String palabraAzar(String[] array){
+        Random r=new Random();
+
+        return array[r.nextInt(0, array.length)];
     }
 }
