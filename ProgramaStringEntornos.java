@@ -12,19 +12,19 @@ import java.util.Scanner;
  */
 public class ProgramaStringEntornos {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        String[] array=new String[10];
+        Scanner scanner = new Scanner(System.in);
+        String[] array = new String[10];
         for (int i = 0; i < 10; i++) {
             System.out.println("Introduzca palabra");
-            array[i]= scanner.next();
+            array[i] = scanner.next();
         }
         System.out.println("Elija una de las siguientes opciones: \n 1) Ver todas las palabras: \n 2) Obtener una palabra al azar: \n 3) Ver número de letras:  \n 4) Ver media de letras: "
                 + "\n 5) Ver palabra con más letras: \n 6) Ver palabra con menos letras");
-        int opcion= scanner.nextInt();
-        switch (opcion){
+        int opcion = scanner.nextInt();
+        switch (opcion) {
             case 1:
 
-                palabras(array);
+                todasPalabras(array);
                 break;
 
             case 2:
@@ -32,7 +32,7 @@ public class ProgramaStringEntornos {
 
                 break;
             case 3:
-
+                System.out.println(totalletras(array));
                 break;
 
             case 4:
@@ -56,16 +56,27 @@ public class ProgramaStringEntornos {
 
 
     }
-    public static void todasPalabras(String[]array){
+
+    public static void todasPalabras(String[] array) {
         for (String item :
                 array) {
-            System.out.print("\t"+item);
+            System.out.print("\t" + item);
         }
     }
 
-    public static String palabraAzar(String[] array){
-        Random r=new Random();
+    public static String palabraAzar(String[] array) {
+        Random r = new Random();
 
         return array[r.nextInt(0, array.length)];
+    }
+
+    /*- Ver número de letras: mostrará el número de letras que hay en total entre todas las palabras*/
+    public static int totalletras(String[] array) {
+int contador=0;
+        for (String item :
+                array) {
+            contador += item.length();
+        }
+
     }
 }
