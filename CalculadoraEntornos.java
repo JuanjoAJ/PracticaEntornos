@@ -28,6 +28,7 @@ public class CalculadoraEntornos {
                 System.out.printf("La multiplicación entre %d y %d da un resultado de %d", numUno, numDos, mult(numUno, numDos));
                 break;
 
+
             case "/":
                 if (numUno == 0 || numDos == 0) {
                     System.out.println("La siento la división no puede ser entre 0");
@@ -45,12 +46,14 @@ public class CalculadoraEntornos {
         }
 
 
+
     }
 
     public static int suma(int n1, int n2) {
 
         return n1 + n2;
     }
+
 
     public static int resta(int n1, int n2) {
 
@@ -64,9 +67,10 @@ public class CalculadoraEntornos {
 
 
     public static double div(int n1, int n2) {
-        double divD = (double) n1 / n2;
-        return divD;
+       return (double) n1 / n2;
+
 
     }
 
 }
+
