@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Calculadora {
-static int numUno, numDos;
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+    int numUno, numDos;
         String op;
         System.out.println("Introduzca primer número");
         numUno = scanner.nextInt();
@@ -18,9 +18,9 @@ static int numUno, numDos;
         switch (op) {
             case "+":
 
-                System.out.printf("La suma entre %d y %d da un resultado de %d", numUno, numDos, suma());
+                System.out.printf("La suma entre %d y %d da un resultado de %d", numUno, numDos, suma(numDos,numDos));
                 break;
-/*
+
             case "-":
 
                 System.out.printf("La resta entre %d y %d da un resultado de %d", numUno, numDos, resta(numUno, numDos));
@@ -37,14 +37,14 @@ static int numUno, numDos;
             default:
                 System.out.println("Lo siento, esa operación aún no la tenemos contemplada");
                 break;
-*/
+
 
         }
 
     }
 
-    public static int suma() {
-        return numUno + numDos;
+    public static int suma(int n1,int n2) {
+        return n1 + n2;
     }
 
 }
