@@ -24,7 +24,6 @@ public class ProgramaStringEntornos {
             case 1:
                 palabras(array);
                 break;
-                break;
             case 2:
 
                 break;
