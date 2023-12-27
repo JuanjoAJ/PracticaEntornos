@@ -9,7 +9,7 @@ import java.util.Scanner;
  * - Ver palabra con más letras
  * - Ver palabra con menos letras
  */
-public class ProgramaString {
+public class ProgramaStringEntornos {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         String[] array=new String[10];

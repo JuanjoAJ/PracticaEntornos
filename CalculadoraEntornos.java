@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculadora {
+public class CalculadoraEntornos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numUno, numDos;
