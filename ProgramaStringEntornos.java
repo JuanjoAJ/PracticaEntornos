@@ -22,7 +22,8 @@ public class ProgramaStringEntornos {
         int opcion= scanner.nextInt();
         switch (opcion){
             case 1:
-
+                palabras(array);
+                break;
                 break;
             case 2:
 
@@ -51,5 +52,11 @@ public class ProgramaStringEntornos {
         }
 
 
+    }
+    public static void palabras(String[]array){
+        for (String item :
+                array) {
+            System.out.print("\t"+item);
+        }
     }
 }
