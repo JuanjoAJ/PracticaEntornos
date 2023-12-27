@@ -41,7 +41,7 @@ public class ProgramaStringEntornos {
                 break;
 
             case 5:
-
+                System.out.println(palabraLarga(array));
                 break;
 
             case 6:
@@ -89,4 +89,20 @@ public class ProgramaStringEntornos {
         }
         return contador / array.length;
     }
+    /*- Ver palabra con más letras*/
+    public static String palabraLarga(String[] array) {
+        String palabraLarga = "";
+        int longitudMaxima = 0;
+
+        for (String palabra : array) {
+            int longitudPalabra = palabra.length();
+            if (longitudPalabra > longitudMaxima) {
+                longitudMaxima = longitudPalabra;
+                palabraLarga = palabra;
+            }
+        }
+
+        return palabraLarga;
+    }
+
 }
