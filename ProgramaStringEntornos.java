@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -45,6 +46,7 @@ public class ProgramaStringEntornos {
                 break;
 
             case 6:
+                System.out.println(palabraCorta(array));
 
                 break;
 
@@ -103,6 +105,10 @@ public class ProgramaStringEntornos {
         }
 
         return palabraLarga;
+    }
+    public static String palabraCorta(String[] array){
+        Arrays.sort(array);
+        return array[0];
     }
 
 }
