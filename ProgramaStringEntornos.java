@@ -32,10 +32,11 @@ public class ProgramaStringEntornos {
 
                 break;
             case 3:
-                System.out.println(totalletras(array));
+                System.out.println(totalLetras(array));
                 break;
 
             case 4:
+                System.out.println(mediaLetras(array));
 
                 break;
 
@@ -71,12 +72,21 @@ public class ProgramaStringEntornos {
     }
 
     /*- Ver número de letras: mostrará el número de letras que hay en total entre todas las palabras*/
-    public static int totalletras(String[] array) {
-int contador=0;
+    public static int totalLetras(String[] array) {
+        int contador = 0;
         for (String item :
                 array) {
             contador += item.length();
         }
+        return contador;
 
+    }
+
+    public static int mediaLetras(String[] array) {
+        int contador = 0;
+        for (String item : array) {
+            contador += item.length();
+        }
+        return contador / array.length;
     }
 }
