@@ -67,8 +67,8 @@ public class Calculadora {
 
 
     public static double div(int n1, int n2) {
-        double divD = (double) n1 / n2;
-        return divD;
+       return (double) n1 / n2;
+
 
     }
 
