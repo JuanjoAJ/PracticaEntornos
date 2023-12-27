@@ -23,7 +23,8 @@ public class ProgramaStringEntornos {
         int opcion= scanner.nextInt();
         switch (opcion){
             case 1:
-                todasPalabras(array);
+
+                palabras(array);
                 break;
 
             case 2:
